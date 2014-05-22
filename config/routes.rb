@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'welcome/home'
 
+  get 'tweet/session'
+
   devise_for :users
   resources :tweets
 

@@ -1,8 +1,7 @@
 module WelcomeHelper
 
-
 	def resource_name
-    :tweet
+    :user
   end
 
   def resource
@@ -10,7 +9,7 @@ module WelcomeHelper
   end
 
   def devise_mapping
-    @devise_mapping ||= Devise.mappings[:tweet]
+    @devise_mapping ||= Devise.mappings[:user]
   end
 
 end
