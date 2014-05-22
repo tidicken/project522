@@ -1,18 +1,18 @@
-You are logged in as <%= current_user.email %>.<br />
-
-
+<h1>IN CLASS PROJECT</h1>
 <div>
 
 <% if user_signed_in? %>
 
+You are logged in as <%= current_user.email %>.<br />
+
 <%= link_to "Sign out",destroy_user_session_path, method: :delete, class: "button" %>
 
 <% else %>
+
+
 
 <%= link_to "Sign in",new_user_session_path %>
 
 <% end %>
 
 </div>
-
-
